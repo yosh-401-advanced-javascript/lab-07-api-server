@@ -29,4 +29,13 @@ describe('web server', () => {
 
   });
 
+  it('should return 404 with a path if trying to get a path that does not exist, () => {
+
+    return mockRequest
+      .get('/notAPath')
+      .then(results => {
+        expect(results.status).toBe(404);
+      }).catch(console.error);
+  });
+
 });
