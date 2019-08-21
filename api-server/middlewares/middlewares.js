@@ -22,15 +22,11 @@ const randomValid = (request, response, next ) => {
 //404 Error Handler Middleware
 const notFound = (request, response) => {
   response.status(404).send('404: Not Found');
-  // response.statusMessage = '404: Not Found';
-  // response.json({error: '404: Not Found'});
 };
 
 //Error Handling MiddleWare
-const errorHandler = (error, request, response, next) => {
+const errorHandler = (error, request, response) => {
   response.status(500).send(error);
-  // response.statusMessage = 'Server Error';
-  // response.json({error: error});
 };
 
 module.exports = {requestTimeStamp, logging, randomValid, notFound, errorHandler};
