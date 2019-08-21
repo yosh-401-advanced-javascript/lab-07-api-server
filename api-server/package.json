@@ -6,7 +6,8 @@
     "lint": "eslint **/*.js",
     "start": "node index.js",
     "test": "jest --verbose --coverage",
-    "test-watch": "jest --watchAll --verbose --coverage"
+    "test-watch": "jest --watchAll --verbose --coverage --detectOpenHandles",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,8 @@
   "devDependencies": {
     "eslint": "^6.2.1",
     "jest": "^24.9.0",
+    "jsdoc": "^3.6.3",
+    "mongodb-memory-server": "^5.2.0",
     "supergoose": "^0.2.6",
     "supertest": "^4.0.2"
   }
