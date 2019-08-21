@@ -25,6 +25,7 @@
   "description": "",
   "devDependencies": {
     "eslint": "^6.2.1",
+    "express-swagger-generator": "^1.1.15",
     "jest": "^24.9.0",
     "supergoose": "^0.2.6",
     "supertest": "^4.0.2"
